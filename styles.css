@@ -1,0 +1,359 @@
+/* styles.css */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f5f5f5; /* Latar belakang lebih terang */
+    color: #333333;
+}
+
+header {
+    background-color: #003366;
+    color: #ffffff;
+    padding: 1rem;
+    text-align: center;
+}
+
+header h1 {
+    margin: 0;
+}
+
+nav ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    background-color: #002244;
+}
+
+nav ul li {
+    margin: 0 1rem;
+}
+
+nav ul li a {
+    color: #ffffff;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+nav ul li a:hover {
+    color: #ffdd57; /* Warna hover */
+}
+
+main {
+    padding: 2rem;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 1rem;
+}
+
+table th, table td {
+    border: 1px solid #ccc;
+    padding: 0.5rem;
+    text-align: left;
+}
+
+table th {
+    background-color: #003366;
+    color: #ffffff;
+}
+
+table tr:nth-child(even) {
+    background-color: #f2f2f2;
+}
+
+table tr:hover {
+    background-color: #dce4ec;
+}
+
+footer {
+    background-color: #003366;
+    color: #ffffff;
+    text-align: center;
+    padding: 1rem;
+    margin-top: 2rem;
+}
+
+table img {
+    width: 100px; 
+    height: auto; 
+}
+
+.berita-container {
+    display: flex;
+    flex-direction: column; /* Mengatur item berita dalam kolom */
+    gap: 1rem; /* Jarak antara item berita */
+}
+
+.berita-item {
+    display: flex;
+    align-items: center;
+    background-color: rgba(255, 255, 255, 0.8); /* Latar belakang transparan */
+    border: 1px solid rgba(204, 204, 204, 0.5); /* Garis transparan */
+    padding: 1rem;
+    border-radius: 5px; /* Sudut yang membulat */
+}
+
+.berita-foto {
+    width: 100px; /* Ukuran foto */
+    height: auto; /* Menjaga proporsi gambar */
+    margin-right: 1rem; /* Jarak antara foto dan teks */
+}
+
+.berita-content h3 {
+    margin: 0; /* Menghilangkan margin default */
+}
+
+.kegiatan-container {
+    display: flex;
+    flex-direction: column; /* Mengatur item kegiatan dalam kolom */
+    gap: 1rem; /* Jarak antara item kegiatan */
+}
+
+.kegiatan-item {
+    background-color: rgba(255, 255, 255, 0.8); /* Latar belakang transparan */
+    border: 1px solid rgba(204, 204, 204, 0.5); /* Garis transparan */
+    padding: 1rem;
+    border-radius: 5px; /* Sudut yang membulat */
+}
+
+/* Styling untuk form login */
+.login-form {
+    max-width: 400px;
+    margin: 50px auto;
+    padding: 20px;
+    background: rgba(255, 255, 255, 0.9);
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    border-radius: 10px;
+}
+
+.login-form label {
+    display: block;
+    font-weight: bold;
+    margin-bottom: 10px;
+    color: #333;
+}
+
+.login-form input {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 15px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 14px;
+}
+
+.login-form input:focus {
+    border-color: #007BFF;
+    outline: none;
+    box-shadow: 0 0 5px rgba(0, 123, 255, 0.5);
+}
+
+.login-form button {
+    width: 100%;
+    padding: 10px;
+    background-color: #003366;
+    color: white;
+    font-weight: bold;
+    font-size: 16px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.login-form button:hover {
+    background-color: #00509e;
+}
+
+.login-form button:active {
+    background-color: #001f4d;
+}
+
+.login-form input::placeholder {
+    color: #999;
+    font-style: italic;
+}
+
+/* Styling untuk form peminjaman barang */
+.form-container {
+    max-width: 600px;
+    margin: 20px auto;
+    padding: 20px;
+    background: rgba(255, 255, 255, 0.9);
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    border-radius: 10px;
+}
+
+.peminjaman-form {
+    display: flex;
+    flex-direction: column;
+}
+
+.peminjaman-form label {
+    margin-bottom: 5px;
+    font-weight: bold;
+}
+
+.peminjaman-form input {
+    padding: 10px;
+    margin-bottom: 15px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+.peminjaman-form input:focus {
+    border-color: #007BFF;
+    outline: none;
+    box-shadow: 0 0 5px rgba(0, 123, 255, 0.5);
+}
+
+.peminjaman-form .btn-submit {
+    padding: 10px;
+    background-color: #003366;
+    color: white;
+    font-weight: bold;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.peminjaman-form .btn-submit:hover {
+    background-color: #00509e;
+}
+
+/* Styling untuk tabel peminjaman barang */
+.table-container {
+    width: 70%;
+    margin: 20px auto;
+    overflow-x: auto;
+    background: rgba(255, 255, 255, 0.9);
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    border-radius: 10px;
+    padding: 20px;
+}
+
+/* Styling untuk notifikasi */
+.notification {
+    background-color: #d4edda;
+    color: #155724;
+    padding: 10px;
+    margin: 20px 0;
+    border: 1px solid #c3e6cb;
+    border-radius: 5px;
+    text-align: center;
+}
+
+.notification.error {
+    background-color: #f8d7da;
+    color: #721c24;
+    border-color: #f5c6cb;
+}
+
+.notification.info {
+    background-color: #d1ecf1;
+    color: #0c5460;
+    border-color: #bee5eb;
+}
+
+
+.container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px; /* Jarak antar card */
+}
+
+.kegiatan-card {
+    border: 1px solid #ccc; /* Gaya border */
+    border-radius: 8px; /* Sudut bulat */
+    padding: 16px; /* Ruang di dalam card */
+    width: calc(33% - 20px); /* Lebar card, menyesuaikan dengan 3 card per baris */
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Bayangan */
+}
+
+.kegiatan-card h3 {
+    margin: 0 0 10px 0; /* Margin untuk judul */
+}
+
+.delete-btn {
+    color: red; /* Warna merah untuk tombol hapus */
+    text-decoration: none; /* Tanpa garis bawah */
+}
+
+.delete-btn:hover {
+    text-decoration: underline; /* Garis bawah saat hover */
+}
+
+
+.add-dosen-form {
+    display: flex;
+    flex-direction: column;
+    gap: 10px; /* Jarak antar elemen form */
+    margin-bottom: 20px; /* Margin bawah untuk memberi ruang pada daftar dosen */
+}
+
+.add-dosen-form input {
+    padding: 10px; /* Ruang di dalam input */
+    border: 1px solid #ccc; /* Border untuk input */
+    border-radius: 5px; /* Sudut bulat pada input */
+}
+
+.add-dosen-form button {
+    padding: 10px; /* Ruang di dalam tombol */
+    background-color: #28a745; /* Warna latar belakang tombol */
+    color: white; /* Warna teks tombol */
+    border: none; /* Menghilangkan border tombol */
+    border-radius: 5px; /* Sudut bulat pada tombol */
+    cursor: pointer; /* Mengubah kursor saat hover */
+}
+
+.add-dosen-form button:hover {
+    background-color: #218838; /* Warna latar belakang tombol saat hover */
+}
+
+
+.add_kegiatan input {
+    padding: 10px; /* Ruang di dalam input */
+    border: 1px solid #ccc; /* Border untuk input */
+    border-radius: 5px; /* Sudut bulat pada input */
+}
+
+.add_kegiatan button {
+    padding: 10px; /* Ruang di dalam tombol */
+    background-color: #28a745; /* Warna latar belakang tombol */
+    color: white; /* Warna teks tombol */
+    border: none; /* Menghilangkan border tombol */
+    border-radius: 5px; /* Sudut bulat pada tombol */
+    cursor: pointer; /* Mengubah kursor saat hover */
+}
+
+.add_kegiatan button:hover {
+    background-color: #218838; /* Warna latar belakang tombol saat hover */
+}
+
+.add_berita input {
+    padding: 10px; /* Ruang di dalam input */
+    border: 1px solid #ccc; /* Border untuk input */
+    border-radius: 5px; /* Sudut bulat pada input */
+}
+
+.add_berita button {
+    padding: 10px; /* Ruang di dalam tombol */
+    background-color: #28a745; /* Warna latar belakang tombol */
+    color: white; /* Warna teks tombol */
+    border: none; /* Menghilangkan border tombol */
+    border-radius: 5px; /* Sudut bulat pada tombol */
+    cursor: pointer; /* Mengubah kursor saat hover */
+}
+
+.add_berita button:hover {
+    background-color: #218838; /* Warna latar belakang tombol saat hover */
+}
+
+
+
